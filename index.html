@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<title>REJISTRATION FORM</title>
+<style>
+*{font-family:Calibri,Consolas,Futura Bk BT;}
+.container
+{     background-color:black;
+      width:250px;
+       height:400px; 
+       padding:10px;
+      margin: 30px auto;
+} 
+h3{
+      color: aqua;
+       text-align:center;
+        font-size:30px;}
+form { color:white;
+      font-size:18px;  
+}
+.inp1{font-family:Berlin Sans FB;
+     color:white;
+    background-color:black;
+    font-size:18px;
+     width:230px;
+   border:none;
+   border-bottom:3px  solid white;
+    margin-bottom:20px;
+   outline:none;
+}
+.phone{margin-top:20px;}
+
+.reset { text-align:center;
+        margin-left:68px;
+  }
+.submit, .reset {width:60px; height:30px; 
+         background-color: aqua;
+       color:black; 
+       font-size:15px;
+ }
+
+</style>
+</head>
+<body>
+<div class="container"><h3>FORM</h3>
+      <form action="https://formspree.io/f/mnqkdrpo"method="POST">
+       <label>Name:</label>
+       <input type="text" class="inp1" placeholder="Enter Your Name" name="name" required min="5">
+       <label>Course:</label>
+       <input list="course" class="inp1" name="course" required>
+       <datalist id="course" ><option  value="B.A"><option  value="B.C.A"><option  value="B.S.C">
+       <option  value="B.Com"><option  value="PGDCA"></datalist>
+       <label class="phone">Phone no. :</label>
+       <input type="number" class="inp1 " placeholder="Enter Your Mobile no." name="mobile no." min="10" required>
+       <label>Email :</label>     
+       <input type="email" class="inp1" placeholder="Enter Your Email." name="email"required>
+       <input type="reset" class="reset" >
+       <input type="submit" class="submit">
+       </form>
+</div>
+</body>
+</html>
